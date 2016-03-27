@@ -1,4 +1,3 @@
-<div>
 <h2> SPbAU llvm project </h2>
 <p> Building the project: </p>
 <pre>
@@ -13,5 +12,3 @@ $ make
 <p> 
 If llvm or llvm headers not found check this: http://llvm.org/docs/CMake.html#embedding-llvm-in-your-project
 </p>
-
-</div>

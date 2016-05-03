@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.8)
-project(MyCustomPasses)
+project(SteensgaardsAnalysis)
 
 find_package(LLVM REQUIRED CONFIG)
 
@@ -14,7 +14,7 @@ message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
 message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
 
 #Without -fno-rtti nothing works. W T F 
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -fno-rtti -std=c++11")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -fno-rtti -fPIC -std=c++11")
 
 message("CMAKE_CXX_FLAGS is ${CMAKE_CXX_FLAGS}")
 
@@ -34,4 +34,8 @@ macro(copy_files_to_build_dir GLOBS)
     endforeach()
 endmacro()
 
-add_subdirectory(HelloWorld)
+
+
+add_subdirectory("HelloWorld/lib")
+
+

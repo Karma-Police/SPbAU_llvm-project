@@ -4,7 +4,6 @@ include_directories (${SteensgaardsAnalysis_SOURCE_DIR}/HelloWorld/include)
 
 set (HelloWorldCode
         Pass.cpp
-        DSU_Node.cpp 
 )
 
 

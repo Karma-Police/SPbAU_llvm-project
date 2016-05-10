@@ -6,8 +6,8 @@ find_package(LLVM REQUIRED CONFIG)
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
 message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
 
-if ( "${LLVM_PACKAGE_VERSION}" VERSION_LESS "3.6" )
-    message(FATAL_ERROR "Need LLVM >=3.6")
+if ( "${LLVM_PACKAGE_VERSION}" VERSION_LESS "3.8" )
+    message(FATAL_ERROR "Need LLVM >=3.8")
 endif()
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
@@ -37,5 +37,5 @@ endmacro()
 
 
 add_subdirectory("HelloWorld/lib")
-
+add_subdirectory("AAHelloWorld/lib")
 
